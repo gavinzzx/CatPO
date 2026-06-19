@@ -2,6 +2,6 @@
 
 This repository will contain the official implementation of our paper.
 
-⛳️ Progress Update: We have almost completed all preparations. We will release the code no later than June 26 AoE.
+⛳️ Progress Update: We have almost completed all preparations. We will release the project no later than June 26 AoE.
 
 ⏳ The Code will be released soon.
