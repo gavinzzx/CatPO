@@ -3,8 +3,13 @@
 This repository will contain the official implementation of our paper.
 
 ⛳️ Progress Update: We have almost completed all preparations. We will release the project no later than June 26 AoE.
+//⏳ The Code will be released soon.
 
-⏳ The Code will be released soon.
+## Train
+run catpo.sh 
+
+## Test
+We conduct the test in the general and opensource benchamrk, such as AMBER, MM-Hal Bench. Using the official guide for configuration and testing.
 
 ## Dataset
 We conducted experiments using the publicly available RLHF-V Dataset (https://huggingface.co/datasets/openbmb/RLHF-V-Dataset).
