@@ -48,14 +48,14 @@ SAVE_DIR=tdp3-KL-PE-tok-7B-51118v1_r2_1_4e6ep6-wd005wr003-bt01-lmKL003_N3
 COMMENT=see-the-left-comment
 
 
-echo "使用的 GPU: ${GPU_TO_USE}"  
-echo "使用的 计算代码: ${CODE}"  
-echo "使用的 奖励值JSON: ${TOKEN_REWARD_PATH}"
-echo "使用的 学习参数 LR/EPOCH/BATCH/ACC/WD/WR/BETA: ${LR} ${NUM_EPOCH} ${TRAIN_BATCH_SIZE} ${GRAD_ACCUM} ${WEIGHT_DECAY} ${WARMUP_RATIO} ${BETA}"
-echo "使用的 其他参数 CLIP_NORM/LAMBDA_KL/LAMBDA_KL_WARMUP_RATIO: ${CLIP_NORM} ${LAMBDA_KL} ${LAMBDA_KL_WARMUP_RATIO}"
-echo "使用的 模型: ${MODEL}"  
-echo "使用的 保存路径: ${SAVE_DIR}" 
-echo "备注: PE tok version  ${COMMENT}"
+echo "The Used GPU: ${GPU_TO_USE}"  
+echo "The Used Code: ${CODE}"  
+echo "The Used reward JSON: ${TOKEN_REWARD_PATH}"
+echo "The Used LR parameters LR/EPOCH/BATCH/ACC/WD/WR/BETA: ${LR} ${NUM_EPOCH} ${TRAIN_BATCH_SIZE} ${GRAD_ACCUM} ${WEIGHT_DECAY} ${WARMUP_RATIO} ${BETA}"
+echo "The Used Other parameters CLIP_NORM/LAMBDA_KL/LAMBDA_KL_WARMUP_RATIO: ${CLIP_NORM} ${LAMBDA_KL} ${LAMBDA_KL_WARMUP_RATIO}"
+echo "The Used Model: ${MODEL}"  
+echo "The Used Dictionary : ${SAVE_DIR}" 
+echo "NOTE: PE tok version  ${COMMENT}"
 
 
 export WANDB_DISABLED=true
