@@ -17,13 +17,15 @@ We conducted experiments using the publicly available RLHF-V Dataset (https://hu
 
 
 ## Citation
-If you find our paper or codebase useful, please consider cite
 
-@inproceedings{
-zheng2026catpo,
-title={Cat-{PO}: Cross-modal Adaptive Token-rewards for Preference Optimization in Truthful Multimodal {LLM}s},
-author={Zhixiao Zheng and Zheren Fu and Zhiyuan Yao and Dongming Zhang and Zhendong Mao},
-booktitle={The Fourteenth International Conference on Learning Representations},
-year={2026},
-url={https://openreview.net/forum?id=iIbe6qDN0A}
+If you find Cat-PO useful for your research, please cite:
+
+```bibtex
+@inproceedings{zheng2026catpo,
+  title     = {Cat-{PO}: Cross-modal Adaptive Token-rewards for Preference Optimization in Truthful Multimodal {LLM}s},
+  author    = {Zhixiao Zheng and Zheren Fu and Zhiyuan Yao and Dongming Zhang and Zhendong Mao},
+  booktitle = {The Fourteenth International Conference on Learning Representations},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=iIbe6qDN0A}
 }
+```
