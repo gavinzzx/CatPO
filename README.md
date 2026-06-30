@@ -8,18 +8,18 @@ This repository will contain the official implementation of our paper.
 ## Train
 run catpo.sh 
 
-## Test
-We conduct the test in the general and opensource benchamrk, such as AMBER, MM-Hal Bench. Using the official guide for configuration and testing.
+## Evaluation
+We conduct the evaluation in the general and opensource benchamrk, such as AMBER, MM-Hal Bench. 
+Using the official guide for configuration and testing.
 
 ## Dataset
-We conducted experiments using the publicly available RLHF-V Dataset (https://huggingface.co/datasets/openbmb/RLHF-V-Dataset).
+We conducted experiments using the publicly available [RLHF-V Dataset](https://huggingface.co/datasets/openbmb/RLHF-V-Dataset).
 
 
 
 ## Citation
 
-If you find Cat-PO useful for your research, please cite:
-
+If you find Cat-PO useful for your research, please consider cite our papers 📝 and star us ⭐️！
 ```bibtex
 @inproceedings{zheng2026catpo,
   title     = {Cat-{PO}: Cross-modal Adaptive Token-rewards for Preference Optimization in Truthful Multimodal {LLM}s},
