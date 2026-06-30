@@ -1,19 +1,27 @@
-# Cat-PO: Cross-modal Adaptive Token-rewards for Preference Optimization in Truthful Multimodal LLMs
+# Cat-PO: Cross-modal Adaptive Token-rewards for Preference Optimization in Truthful Multimodal LLMs.
 
 This repository will contain the official implementation of our paper.
 
 ⛳️ Progress Update: We have almost completed all preparations. We will release the project no later than June 30 AoE.
 
 
-## Train
-run catpo.sh 
+## Brief Introduction
 
-## Evaluation
-We conduct the evaluation in the general and opensource benchamrk, such as AMBER, MM-Hal Bench. 
-Using the official guide for configuration and testing.
+
 
 ## Dataset
 We conducted experiments using the publicly available [RLHF-V Dataset](https://huggingface.co/datasets/openbmb/RLHF-V-Dataset).
+
+
+## Train
+```bibtex
+run catpo.sh 
+```
+## Evaluation
+We conduct the evaluation in the general and opensource benchamrk, such as [AMBER Bench](https://github.com/junyangwang0410/AMBER), [MM-Hal Bench](https://huggingface.co/datasets/Shengcao1006/MMHal-Bench). 
+
+Using the official guide for configuration and testing.
+
 
 
 
