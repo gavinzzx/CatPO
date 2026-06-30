@@ -20,7 +20,7 @@ Model: We mainly conduct our experiments in The [LLaVA-v1.5](https://github.com/
 
 ## Train
 ```bibtex
-run catpo.sh 
+bash catpo.sh 
 ```
 ## Evaluation
 We conduct the evaluation in the general and opensource benchamrk, such as [AMBER Bench](https://github.com/junyangwang0410/AMBER), [MM-Hal Bench](https://huggingface.co/datasets/Shengcao1006/MMHal-Bench). 
