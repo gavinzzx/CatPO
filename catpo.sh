@@ -3,7 +3,7 @@
 
 
 
-MODEL_VERSION=llava_loraft_dpo_our_ocrvqa8kfilter_diffu500_textvqa8kfilter_diffu500_r1024_a2048
+MODEL_VERSION=catpo
 
 PORT=$(python -c "import socket; s=socket.socket(); s.bind(('',0)); print(s.getsockname()[1]); s.close()")
 export MASTER_PORT=$PORT
