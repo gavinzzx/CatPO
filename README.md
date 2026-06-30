@@ -16,7 +16,7 @@ Visit our 🏠 github page and 📃 paper to learn more! We also welcome you to 
 ## Dataset and Model
 Dataset: We conducted experiments using the publicly available [RLHF-V Dataset](https://huggingface.co/datasets/openbmb/RLHF-V-Dataset).
 
-Model: We mainly conduct our experiments in The LLaVA-v1.5 series.
+Model: We mainly conduct our experiments in The [LLaVA-v1.5](https://github.com/haotian-liu/llava) series.
 
 ## Train
 ```bibtex
