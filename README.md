@@ -2,8 +2,6 @@
 
 This repository will contain the official implementation of our paper.
 
-⛳️ Progress Update: We have almost completed all preparations. We will release the project no later than June 30 AoE.
-
 
 ## Brief Introduction
 This repository provides the code and data for Cat-PO, which is a novel multimodal preference optimization framework based on cross-modal adaptive token-level rewards, thereby mitigating hallucinations and improving the truthfulness. The Cat-PO framework is shown below.
