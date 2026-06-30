@@ -6,11 +6,11 @@ This repository will contain the official implementation of our paper.
 
 
 ## Brief Introduction
-This repository provides the code and data for Cat-PO. Cat-PO is a novel multimodal preference alignment framework that performs fine-grained optimization of MLLM generation behavior through cross-modal adaptive token-level rewards, thereby mitigating multimodal hallucinations and improving the truthfulness of model outputs.
+This repository provides the code and data for Cat-PO, which is a novel multimodal preference optimization framework based on cross-modal adaptive token-level rewards, thereby mitigating hallucinations and improving the truthfulness.
 
-We fully leverage the intrinsic cross-modal capabilities of MLLMs to compute the global, local, and semantic relevance between response tokens and visual content based on cross-modal attention, image-patch attention entropy, and cross-modal semantic similarity, respectively. These relevance signals are then integrated to construct smooth token-level rewards. Benefiting from this fine-grained reward mechanism, Cat-PO can more precisely reinforce visually critical tokens and suppress hallucinated tokens without relying on additional visual detection models, APIs or external tools. Moreover, We conduct experiments on the RLHF-V dataset and validate the effectiveness of Cat-PO across multiple backbone models.
+We fully leverage the intrinsic cross-modal capabilities of MLLMs to compute the global, local, and semantic relevance between response tokens and visual content based on cross-modal attention, patch entropy, and semantic similarity, respectively. These relevance signals are then integrated to construct smooth token-level rewards. Benefiting from this fine-grained reward mechanism, Cat-PO can more precisely reinforce visually critical tokens and suppress hallucinated tokens without relying on external detection tools or APIs. We conduct the experiments on the RLHF-V dataset and validate the effectiveness of Cat-PO.
 
-Visit our 🏠 github page and 📃 paper to learn more! We also welcome you to use our work for evaluation and research.
+Visit our 🏠github page and 📝paper to learn more! We also welcome you to use our work for research and evaluation.
 
 
 ## Dataset and Model
