@@ -17,10 +17,6 @@ This repository provides the code and data for Cat-PO, which is a novel **multim
   <img src="image/Cat-PO-frame.png" width="850">
 </p>
 
-<p align="center">
-  Overview of our proposed **Cat-PO** framework.
-</p>
-
 We fully leverage the intrinsic cross-modal capabilities of MLLMs to compute the global, local, and semantic relevance between response tokens and visual content based on cross-modal attention, patch entropy, and semantic similarity, respectively. These relevance signals are then integrated to construct token-level rewards. Benefiting from this fine-grained reward mechanism, Cat-PO can more precisely reinforce visually critical tokens and suppress hallucinated tokens without relying on external tools or APIs. We conduct the experiments and validate the effectiveness of Cat-PO.
 
 
@@ -29,7 +25,7 @@ We fully leverage the intrinsic cross-modal capabilities of MLLMs to compute the
 ## Dataset and Model
 - **Dataset**: We conducted experiments using the publicly available [RLHF-V Dataset](https://huggingface.co/datasets/openbmb/RLHF-V-Dataset).
 
-- **Model**: We mainly conduct our experiments in The [LLaVA-v1.5](https://github.com/haotian-liu/llava) series.
+- **Model**: We mainly conduct our experiments in the [LLaVA-v1.5](https://github.com/haotian-liu/llava) series.
 
 ## Training
 Most of the configurations are already complete in `catpo.sh`. Let's start quickly with the following commands.
@@ -41,12 +37,12 @@ bash catpo.sh
 ## Evaluation
 We conduct the evaluation on the general and open-source benchmarks, such as [AMBER Bench](https://github.com/junyangwang0410/AMBER), [MM-Hal Bench](https://huggingface.co/datasets/Shengcao1006/MMHal-Bench). 
 
-Using the official guide for configuration and testing.
+Use the official guide for configuration and testing.
 
 
 ## Citation
 
-If you find Cat-PO useful for your research, please consider cite our papers 📝 and star us ⭐️！
+If you find Cat-PO useful for your research, please consider citing our papers 📝 and star us ⭐️！
 ```bibtex
 @inproceedings{zheng2026catpo,
   title     = {Cat-{PO}: Cross-modal Adaptive Token-rewards for Preference Optimization in Truthful Multimodal {LLM}s},
@@ -58,6 +54,6 @@ If you find Cat-PO useful for your research, please consider cite our papers �
 ```
 
 ## Acknowledgement
-This repo is based on [SeVa](https://github.com/Kevinz-code/SeVa) and [RLHF-V](https://github.com/RLHF-V/RLHF-V). We thank their efforts in building their codebase.
+This repo is based on [SeVa](https://github.com/Kevinz-code/SeVa) and [RLHF-V](https://github.com/RLHF-V/RLHF-V). We thank them for their efforts in building their codebase.
 
 
