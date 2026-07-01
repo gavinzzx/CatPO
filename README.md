@@ -1,42 +1,47 @@
-# Cat-PO: Cross-modal Adaptive Token-rewards for Preference Optimization in Truthful Multimodal LLMs.
+<div align="center">
+ <h1> Cat-PO: Cross-modal Adaptive Token-rewards for Preference Optimization in Truthful Multimodal LLMs (ICLR 2026) </h1>
 
-This repository will contain the official implementation of our paper.
+<a href="https://openreview.net/forum?id=iIbe6qDN0A"><img src="https://img.shields.io/badge/OpenReview-Paper-red" alt="OpenReview"></a>
+<a href="https://github.com/gavinzzx/CatPO"><img src="https://img.shields.io/badge/Github-Project page-blue" alt="Project Page"></a>
+
+**Zhixiao Zheng, Zheren Fu, Zhiyuan Yao, Dongming Zhang, Zhendong Mao**<sup>*</sup>
+
+*University of Science and Technology of China*
+</div>
 
 
-## Brief Introduction
-This repository provides the code and data for Cat-PO, which is a novel multimodal preference optimization framework based on cross-modal adaptive token-level rewards, thereby mitigating hallucinations and improving the truthfulness. The framework is shown below.
+## Introduction
+This repository provides the code and data for Cat-PO, which is a novel **multimodal preference optimization framework** based on cross-modal adaptive token-level rewards, thereby mitigating hallucinations and improving the truthfulness. The framework is shown below.
 
 <p align="center">
   <img src="image/Cat-PO-frame.png" width="850">
 </p>
 
 <p align="center">
-  Overview of the proposed Cat-PO framework.
+  Overview of our proposed **Cat-PO** framework.
 </p>
 
 We fully leverage the intrinsic cross-modal capabilities of MLLMs to compute the global, local, and semantic relevance between response tokens and visual content based on cross-modal attention, patch entropy, and semantic similarity, respectively. These relevance signals are then integrated to construct token-level rewards. Benefiting from this fine-grained reward mechanism, Cat-PO can more precisely reinforce visually critical tokens and suppress hallucinated tokens without relying on external tools or APIs. We conduct the experiments and validate the effectiveness of Cat-PO.
 
-Visit our 🏠[homepage](https://github.com/gavinzzx/CatPO) and 📝[paper](https://openreview.net/pdf?id=iIbe6qDN0A) to learn more! We also welcome you to use our work for research and evaluation.
+
 
 
 ## Dataset and Model
-Dataset: We conducted experiments using the publicly available [RLHF-V Dataset](https://huggingface.co/datasets/openbmb/RLHF-V-Dataset).
+- **Dataset**: We conducted experiments using the publicly available [RLHF-V Dataset](https://huggingface.co/datasets/openbmb/RLHF-V-Dataset).
 
-Model: We mainly conduct our experiments in The [LLaVA-v1.5](https://github.com/haotian-liu/llava) series.
+- **Model**: We mainly conduct our experiments in The [LLaVA-v1.5](https://github.com/haotian-liu/llava) series.
 
-## Train
-Most of the configurations are already complete in catpo.sh, let's start quickly from the following commands.
+## Training
+Most of the configurations are already complete in `catpo.sh`. Let's start quickly with the following commands.
 
-```bibtex
+```
 bash catpo.sh 
 ```
 
 ## Evaluation
-We conduct the evaluation in the general and opensource benchamrk, such as [AMBER Bench](https://github.com/junyangwang0410/AMBER), [MM-Hal Bench](https://huggingface.co/datasets/Shengcao1006/MMHal-Bench). 
+We conduct the evaluation on the general and open-source benchmarks, such as [AMBER Bench](https://github.com/junyangwang0410/AMBER), [MM-Hal Bench](https://huggingface.co/datasets/Shengcao1006/MMHal-Bench). 
 
 Using the official guide for configuration and testing.
-
-
 
 
 ## Citation
