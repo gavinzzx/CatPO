@@ -4,7 +4,7 @@
 <a href="https://openreview.net/forum?id=iIbe6qDN0A"><img src="https://img.shields.io/badge/OpenReview-Paper-red" alt="OpenReview"></a>
 <a href="https://github.com/gavinzzx/CatPO"><img src="https://img.shields.io/badge/Github-Project page-blue" alt="Project Page"></a>
 
-**Zhixiao Zheng**<sup>1</sup>, **Zheren Fu**<sup>1</sup>, **Zhiyuan Yao**<sup>1</sup>, **Dongming Zhang**<sup>2</sup>, and **Zhendong Mao**<sup>1,*</sup>
+**Zhixiao Zheng**<sup>1</sup>, **Zheren Fu**<sup>1</sup>, **Zhiyuan Yao**<sup>1</sup>, **Dongming Zhang**<sup>2</sup>, **Zhendong Mao**<sup>1,*</sup>
 
 <sup>1</sup> University of Science and Technology of China  
 <sup>2</sup> State Key Laboratory of Communication Content Cognition, People’s Daily Online  
