@@ -31,7 +31,7 @@ We fully leverage the intrinsic cross-modal capabilities of MLLMs to compute the
 - **Model**: We mainly conduct our experiments in the [LLaVA-v1.5](https://github.com/haotian-liu/llava) series.
 
 ## Training
-Most of the configurations are already complete in `catpo.sh`. Let's start quickly with the following commands.
+Most of the configurations are already included in `catpo.sh`. Let's start quickly with the following commands.
 
 ```
 bash catpo.sh 
@@ -43,7 +43,7 @@ We conduct the evaluation on the general and open-source benchmarks, such as [AM
 On this page, we use `MM-Hal Bench` as an example and provide its core evaluation code below. First, we should download the images in [MM-Hal Bench images](https://huggingface.co/datasets/Shengcao1006/MMHal-Bench/tree/main/images). 
 
 
-With most of the configurations are already complete in `mmhal.sh`, we can start quickly with the following commands.
+With most of the configurations are already included in `mmhal.sh`, we can start quickly with the following commands.
 
 ```
 bash evaluation/mmhal.sh 
