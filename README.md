@@ -38,10 +38,16 @@ bash catpo.sh
 ```
 
 ## Evaluation
-We conduct the evaluation on the general and open-source benchmarks, such as [AMBER Bench](https://github.com/junyangwang0410/AMBER), [MM-Hal Bench](https://huggingface.co/datasets/Shengcao1006/MMHal-Bench). 
+We conduct the evaluation on the general and open-source benchmarks, such as [AMBER Bench](https://github.com/junyangwang0410/AMBER), [MM-Hal Bench](https://huggingface.co/datasets/Shengcao1006/MMHal-Bench). Use the official guide for configuration and testing.
 
-Use the official guide for configuration and testing.
+We also provide the core code of `MM-Hal Bench` as follows. We should download the images in [MM-Hal Bench images](https://huggingface.co/datasets/Shengcao1006/MMHal-Bench/tree/main/images). 
 
+
+All configurations completed in `mmhal.sh`, we can start quickly with the following commands.
+
+```
+bash evaluation/mmhal.sh 
+```
 
 ## Citation
 
