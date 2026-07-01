@@ -43,7 +43,7 @@ We conduct the evaluation on the general and open-source benchmarks, such as [AM
 We also provide the core code of `MM-Hal Bench` as follows. We should download the images in [MM-Hal Bench images](https://huggingface.co/datasets/Shengcao1006/MMHal-Bench/tree/main/images). 
 
 
-All configurations completed in `mmhal.sh`, we can start quickly with the following commands.
+With most of the configurations are already complete in `mmhal.sh`, we can start quickly with the following commands.
 
 ```
 bash evaluation/mmhal.sh 
