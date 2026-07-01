@@ -9,7 +9,7 @@ s = socket.socket(); s.bind(('',0)); print(s.getsockname()[1]); s.close()
 PY
 )
 export MASTER_PORT=$PORT
-echo "使用的 MASTER_PORT: $MASTER_PORT"
+echo "The used MASTER_PORT: $MASTER_PORT"
 
 # GPT‑4
 API_KEY="xxx"
@@ -30,16 +30,16 @@ MODEL_BASE=/home/gavin/model2/llava-v1.5-7b
 
 #==================================
 export CUDA_VISIBLE_DEVICES=$GPU_TO_USE
-echo "使用的 GPU: $GPU_TO_USE"
-echo "使用的 MODEL_VERSION: $MODEL_VERSION"
-echo "使用的 MODEL_PATH: $MODEL_PATH"
-echo "使用的 基础模型: $MODEL_BASE"  
+echo "The used GPU: $GPU_TO_USE"
+echo "The used MODEL_VERSION: $MODEL_VERSION"
+echo "The used MODEL_PATH: $MODEL_PATH"
+echo "The used base model: $MODEL_BASE"  
 OUT_DIR=/home/gavin/bmk/MMHal-Bench/output/${MODEL_VERSION}
 mkdir -p ${OUT_DIR}
 RESP_JSON=${OUT_DIR}/mmhal_${MODEL_VERSION}_6.json
 
 # ------------------------ 1. Reasoning ------------------------------------------
-torchrun --nproc_per_node 1 --master_port ${MASTER_PORT} MMHal-Bench/get_response.py \
+torchrun --nproc_per_node 1 --master_port ${MASTER_PORT} evaluation/get_response.py \
   --input /home/gavin/bmk/MMHal-Bench/response_template.json \
   --output ${RESP_JSON} \
   --image-root /home/gavin/bmk/MMHal-Bench/images \
@@ -49,7 +49,7 @@ torchrun --nproc_per_node 1 --master_port ${MASTER_PORT} MMHal-Bench/get_respons
 # ------------------------ 2. GPT‑4 Evaluation ---------------------------------------
 EVAL_JSON=${OUT_DIR}/mmhal_${MODEL_VERSION}_gpt4_eval_1_3.json
 
-python MMHal-Bench/mmhal_eval_gpt4.py \
+python evaluation/mmhal_eval_gpt4.py \
   --response ${RESP_JSON} \
   --evaluation ${EVAL_JSON} \
   --api-key ${API_KEY} \
